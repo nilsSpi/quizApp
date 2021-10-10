@@ -5,15 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <title>Template</title>
 </head>
 
 
-<body>
+<body onload="init()">
+<div class="content-wrap d-flex justify-content-center align-items-center">
+    <ul class="nav flex-column bg-primary justify-content-center align-items-center">
+        <li class="nav-item navbar-brand">
+           <img src="./img/logo 2.png" alt="">
+          </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li>
+      </ul>
 
-   
+     
+      <div class="card-body myCard">
+        <div id="endScreen" class="endScreen d-none">
+          <div class="circle">
+            <div class="endItems">
+              <img src="./img/Group 5.png" alt="">
+              <span>Completed Html quiz</span>
+              <span>Your score is</span>
+              <div class="option-buttons"></div>
+            </div>
+          </div>
+        </div>
+        <h5 id="questionText"  class="card-title">Frage</h5>
+        <div class="card" onclick="answer('answ_1')">
+          <div id="answ_1" class="card-body">
+            Frage 1
+          </div>
+        </div>
+        <div class="card" onclick="answer('answ_2')">
+          <div id="answ_2" class="card-body">
+            Frage 2
+          </div>
+        </div>
+        <div class="card" onclick="answer('answ_3')">
+          <div id="answ_3" class="card-body">
+           Frage 3
+          </div>
+        </div>
+        <div class="card" onclick="answer('answ_4')">
+          <div id="answ_4" class="card-body">
+            Frage 4
+          </div>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+          <button>prev</button>
+          <button onclick="nextQuestion()" id="nextButton" disabled>next</button>
+        </div>
+    </div>
 
 
+    </div>
 
     <script src="main.js"></script>
 </body>

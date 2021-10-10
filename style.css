@@ -1,0 +1,69 @@
+
+a{
+    color: white !important;
+}
+.d-none{
+    display: none !important;
+}
+
+.content-wrap{
+    height: 100vh;
+    width:100vw ;
+}
+
+.card-body{
+    
+    position: relative;
+    border: 2px solid grey;
+}
+.myCard{
+    margin-right: 20vw !important;
+}
+
+.nav{
+    margin-left: 10vw;
+}
+
+.card{
+    
+}
+
+.card:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.nextButton{
+    
+}
+
+.endScreen{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    z-index: 2;
+    border: 2px solid grey;
+    top: 0;
+    left: 0;
+    
+}
+
+.circle{
+    position: absolute;
+    background-color: tomato;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.endItems{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.endItems>img{
+
+}
